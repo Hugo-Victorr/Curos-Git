@@ -1,0 +1,35 @@
+utilizando uma maquina local/ servidor na rede para armazenar o repositorio do projeto
+
+NA MAQUINA LOCAL/ SERVIDOR
+
+//criar uma pasta "projetos" para armazenar os repositorios
+
+//criar "cliente 1" dentro da pasta projetos
+
+//compartilhara a pasta "projetos" na rede para todos
+
+*/iniciar o repositorio .git na pasta do cliente, porem, não pode ser utilizando apenas "git init". É necessario utilizar outro comando expecifico para repositorios compartilhados/*
+git init --bare
+
+*/agora que o repositorio compartilhado ja foi criado, outros usuarios podem acessar/*
+
+USUARIOS
+
+*/no primeiro acesso de cada usuario, é necessario fazer um clone do repositorio/*
+git clone fila:////(endereço do repositorio do cliente no servidor da rede + nome da pasta clone)
+
+*/para enviar as alterações que fizemos no clone para o repositosio ofcial que está no servidor na rede, precisamos fazer um push, para isso precisamos saber o nome do servidor remoto/*
+
+//descobrir nome do servidor remoto
+git remote
+
+//enviar as alterações feitas no clone para o servidor remoto
+git push (nome da maquina remota) (nome da branch atual. EX: master)
+
+*/ sabendo que outro desenvolvedor fez alterações no repositorio e voce tem que trazer essas alterações para o seu repositorio clone/*
+git pull (nome da maquina remota) (nome da sua branch. ex: master)
+
+*/quando trazemos usando pull, ele da um merge altomatico com a sua branch. Por isso é intertessante criar uma outra branch para poder armazenar o repositorio atualizado nessa branch/*
+git fetch (nome da maquina remota) (nome da branch que vai guardar o repositorio atualizado)
+
+

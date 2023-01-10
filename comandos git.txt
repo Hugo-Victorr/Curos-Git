@@ -1,0 +1,65 @@
+//entrar em uma pasta
+cd (nome da pasta)
+
+//sair de uma pasta 
+cd ..
+
+//limpar tela
+clear
+
+//criar um repositorio
+git init
+//criara uma pasta vazia com o nome ".git"
+
+//saber o status do repositorio
+git status
+
+//adicionar um arquivo para a "stage area"
+git add (nome do arquivo)
+
+//adicionar todos os arquivos que estiverem no diretorio
+git .
+
+//adicionar todos os arquivos txt (pode ser qualquer extensão)
+git *. txt
+
+//Enviar o projeto para o repositorio com uma mensagem
+git commit -m "mensagem"
+
+//para commitar pulando a etapa de add
+git commit -a -m "mensagem"
+
+//ver oque esta na "stage area"
+git diff
+
+//ver oque foi alterado
+git diff --staged
+
+//ver commits que foram feitos desde o incio do projeto
+git log
+
+// ver as alterações feitas nos commits com mais detalhes (com as alterações em ordem do mais recente para o mais antigo)
+git log -p
+
+//ver alterações detalhadas dos coommits antigos com um limitador de quantos vao aparecer o relatrio
+git log -p -n 
+//sendo "n" o numero de comits que voce quer ver, e por estar utilizando o "-p", vai vir do mais recente para o mais antigo
+
+//ver relatorio das alterações feitas no repositorio desde o inicio
+gitk
+
+//mostrar apenas o codigo e a mensagme dos commits
+git log --pretty=oneline
+
+//editar o ultimo commit feito. O codigo do commit antigo é alterado juntamente com a mensagem
+git commit --amend -m "mensagem"
+
+//retirar arquivos que foram enviados para stage area
+git reset HEAD "nome do arquivo.extensão"
+
+//voltar o arquivo para uma versão anterior ao commit que foi feito
+
+//para remover um arquivo
+git rm "nome do arquivo.extensão"
+
+ 

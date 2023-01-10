@@ -1,0 +1,40 @@
+//listar as tags e branchs
+git tags
+
+//listar uma tags
+git tag -a v1.0 -m "mensagem(ex:Versao 1.0)" 
+
+// o "-a" serve para criar uma tag anotada, que serve para registrar o usuario e data que foi feita alterações.
+//uma tag sem anotação não guarda essas infos.
+
+//criar uma tag para commits antigos
+git tag -a V0.0 (codigo do commit) -m "mensagem"
+
+//mostrar commit pela tag
+git show (tag desejada)
+
+//visualizar o projeto em um commit antigo ou ver como o projeto etava em determinado commit
+git checkout (nome da tag)
+
+//voltar para a master
+git checkout master
+
+//deletar a tag
+git -d (tag)
+
+//criar uma branch 
+git branch (nome da branch)
+
+//mudar para a branch
+git checkout (nome da branch)
+
+//criar a branch e mudar para ela
+git checkout -b (nome da branch)
+
+//juntar uma branch na master
+git merge (nome da branch
+OBS:voce tem q estar aonde vai ser o destino da fusao, no caso na branch master
+
+//deletar a branch
+git branch -d (nome da branch) 
+

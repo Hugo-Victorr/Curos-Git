@@ -1,0 +1,10 @@
+GITHUB
+
+*/primeiro gerar uma chave SSH no git para permitir efetuar alterações no github/*
+ssh-keygen
+
+*/em seguida coloque essa chave no seu github, permitindo que esse computador faça alterações no seu repositorio no github/*
+
+*/em seguida cria seu repositorio no github e copie o endereço SSH do repositorio e utilize esse endereço para clonar o repositorio na sua maquina local com o git/*
+git clone (endereço SSH) (nome da pasta local que deseja criar)
+
